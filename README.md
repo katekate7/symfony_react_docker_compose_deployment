@@ -40,6 +40,16 @@ curl -X 'GET' \
   -H 'accept: application/ld+json'
 ```
 
+Pour automatiser les déploiements
+```bash
+cd cicd
+docker compose up -d
+docker logs jenkins_container
+docker build . -t jenkins_agent
+docker inspect jenkins_container
+docker run --init --name jenkins_agent_container --network cicd_network -v /var/run/docker.sock:/var/run/docker.sock jenkins_agent -url http://<IP_adress_jenkins_container>:8080 <secret> <agent name>
+```
+
 Pour supprimer les déploiements
 ```bash
 docker compose down
