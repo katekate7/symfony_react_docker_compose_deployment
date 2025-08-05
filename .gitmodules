@@ -1,0 +1,6 @@
+[submodule "symfony-docker-deployment"]
+	path = symfony-docker-deployment
+	url = https://github.com/fredericBui/symfony-docker-deployment
+[submodule "react-docker-deployment"]
+	path = react-docker-deployment
+	url = https://github.com/fredericBui/react-docker-deployment
