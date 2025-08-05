@@ -14,5 +14,7 @@ php bin/console make:migration
 php bin/console doctrine:migrations:migrate
 ```
 
+Adapter le nom des images avec les votres
+
 http://<IP_Adresse>:8089/
 http://<IP_Adresse>:3000/

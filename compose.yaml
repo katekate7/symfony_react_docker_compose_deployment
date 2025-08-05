@@ -1,12 +1,12 @@
 services:
   frontend:
     container_name: react_frontend_container
-    image: fredericbui/react-deployment-example
+    image: fredericbui/react-deployment
     ports:
       - "3000:3000"
   backend:
     container_name: symfony_backend_container
-    image: fredericbui/symfony_deployment
+    image: fredericbui/symfony-deployment
     ports:
       - "8089:80"
   db:
